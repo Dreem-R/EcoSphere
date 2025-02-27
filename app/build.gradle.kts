@@ -72,5 +72,4 @@ dependencies {
     implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation ("net.objecthunter:exp4j:0.4.8")
 
-
 }

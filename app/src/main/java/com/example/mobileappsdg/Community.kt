@@ -17,7 +17,7 @@ class Community : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, HomeFragment())
+                .replace(R.id.container, CommunityClubFragment())
                 .commit()
         }
 
@@ -27,7 +27,7 @@ class Community : AppCompatActivity() {
                 R.id.nav_home -> {
                     // Inflate Challenges fragment
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.container, HomeFragment())
+                        .replace(R.id.container, CommunityClubFragment())
                         .commit()
                     true
                 }
@@ -39,7 +39,7 @@ class Community : AppCompatActivity() {
                     true
                 }
                 R.id.nav_clubs -> {
-                    supportFragmentManager.beginTransaction().replace(R.id.container,CommunityClubFragment()).commit()
+                    supportFragmentManager.beginTransaction().replace(R.id.container,HomeFragment()).commit()
                     true
                 }
                 R.id.nav_adopt -> {

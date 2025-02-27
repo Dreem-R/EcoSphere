@@ -22,6 +22,7 @@ class CommunityClubActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerViewEvents)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
+        /*
         val events = listOf(
             Event("Tree Plantation Drive", "Today", "07:00 - 10:00", "Lodhi Garden, New Delhi", R.drawable.tree_drive, 20),
             Event("E-Waste Collection Camp", "Sun, 3 Mar", "09:00 - 16:00", "MG Road, Bengaluru", R.drawable.ewaste, 15),
@@ -34,5 +35,6 @@ class CommunityClubActivity : AppCompatActivity() {
 
         eventAdapter = EventAdapter(events)
         recyclerView.adapter = eventAdapter
+        */
     }
 }
