@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Section: All Communities -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/all_communities_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All communities"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/view_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View all"
+                android:layout_marginLeft="150dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#6C63FF" />
+        </LinearLayout>
+
+        <!-- Horizontal RecyclerView for Communities -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/communities_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp" />
+
+        <!-- My Feed Section -->
+        <TextView
+            android:id="@+id/my_feed_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My feed"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"
+            android:textColor="#000000" />
+
+        <!-- Post Input Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:clipToPadding="true"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/write_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your post here"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:textColorHint="#808080"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/publish_post_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Publish Post"
+                android:backgroundTint="#6C63FF"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Feed Posts Section -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/feed_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/nav_home"
+    android:icon="@drawable/challenge"
+    android:title="Home" />
+
+<item
+    android:id="@+id/nav_achievements"
+    android:icon="@drawable/achievement"
+    android:title="Achievements" />
+
+<item
+    android:id="@+id/nav_clubs"
+    android:icon="@drawable/club"
+    android:title="Clubs" />
+
+<item
+    android:id="@+id/nav_adopt"
+    android:icon="@drawable/adopt"
+    android:title="Adopt A Project" />
+</menu>

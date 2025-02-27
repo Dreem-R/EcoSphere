@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FEE3F1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_background">
+
+        <!-- Image Section -->
+        <ImageView
+            android:id="@+id/image_donation"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/donatesample"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title and Organization Name -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donate for Tree Plantation Drive"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_organization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Isha Foundation"
+            android:textColor="#666"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We accomplish this through our unique network of health professionals and organization committed to improving health policies and practices. Isha Foundation is a nonprofit organisation that aims at environment sustainability"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Stats and Donation Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Donation Stats -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:id="@+id/tv_donation_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000+ Donated"
+                    android:textColor="#666"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif" />
+
+                <TextView
+                    android:id="@+id/tv_total_donation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹34,056.08"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+
+            <!-- Donate Now Button -->
+            <Button
+                android:id="@+id/btn_donate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donate now"
+                android:textColor="#FFF"
+                android:backgroundTint="#FF4081"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="8dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
