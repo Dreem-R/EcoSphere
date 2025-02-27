@@ -39,7 +39,7 @@ class Community : AppCompatActivity() {
                     true
                 }
                 R.id.nav_clubs -> {
-                    supportFragmentManager.beginTransaction().replace(R.id.container,ClubFragment()).commit()
+                    supportFragmentManager.beginTransaction().replace(R.id.container,CommunityClubFragment()).commit()
                     true
                 }
                 R.id.nav_adopt -> {

@@ -28,6 +28,10 @@
         android:theme="@style/Theme.GridViewAK"
         tools:targetApi="31">
         <activity
+            android:name=".CommunityClubActivity"
+            android:exported="false"
+            android:theme="@style/Theme.GridViewAK" />
+        <activity
             android:name=".Community"
             android:exported="false" />
         <activity
